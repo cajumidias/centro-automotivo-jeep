@@ -25,6 +25,23 @@ export const Hero: React.FC = () => {
             entende do seu veículo.
           </h1>
 
+          {/* Destaque Visual do Jeep Compass da Foto da Capa para Mobile (Maior Identificação) */}
+          <div className="capa-mobile-jeep-showcase">
+            <div className="capa-mobile-jeep-inner">
+              <img 
+                src={`${import.meta.env.BASE_URL}images/hero-capa-original.png`} 
+                alt="Jeep Compass na oficina especializada InovaÇÃO Centro Automotivo" 
+                className="capa-mobile-jeep-img"
+                loading="eager"
+              />
+              <div className="capa-mobile-jeep-overlay" />
+              <div className="capa-mobile-jeep-badge">
+                <span className="jeep-badge-dot" />
+                <span>JEEP COMPASS • OFICINA ESPECIALIZADA</span>
+              </div>
+            </div>
+          </div>
+
           {/* 3. Subtítulo / Descrição com a quebra de linha idêntica */}
           <p className="capa-subtitle">
             Revisão, diagnóstico eletrônico e manutenção<br className="capa-desktop-br" />

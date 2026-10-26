@@ -56,7 +56,7 @@ export const WhyUs: React.FC = () => {
         {/* Direita: Imagem da Oficina Jeep com Mecânicos em Ação e Bloco "TODOS OS MODELOS JEEP" */}
         <div className="why-right-block">
           <img
-            src="/images/oficina-jeep-secao.png"
+            src={`${import.meta.env.BASE_URL}images/oficina-jeep-secao.png`}
             alt="Oficina especializada com modelos Jeep nos elevadores e mecânicos em ação"
             className="why-mechanic-img"
             loading="lazy"

@@ -20,7 +20,7 @@ export const Header: React.FC = () => {
         {/* Lado Esquerdo: Logo Circular Oficial + CENTRO AUTOMOTIVO • FORTALEZA */}
         <div className="capa-brand-area">
           <img
-            src="/images/logo-inovacao-hd.png"
+            src={`${import.meta.env.BASE_URL}images/logo-inovacao-hd.png`}
             alt="InovaÇÃO Centro Automotivo"
             className="capa-logo-img"
           />

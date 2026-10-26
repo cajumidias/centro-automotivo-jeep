@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
         {/* Identificação da Marca */}
         <div className="footer-brand">
           <img
-            src="/images/logo-footer.png"
+            src={`${import.meta.env.BASE_URL}images/logo-footer.png`}
             alt="InovaÇÃO Centro Automotivo"
             className="footer-logo-img"
             loading="lazy"

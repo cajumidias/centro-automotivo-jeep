@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/centro-automotivo-jeep/',
   plugins: [react()],
   server: {
     port: 5180,

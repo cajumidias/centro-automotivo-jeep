@@ -128,6 +128,10 @@ export const JEEP_MODELS = [
 export const GOOGLE_MAPS_REVIEWS_URL =
   'https://www.google.com/maps/place/Inova%C3%A7%C3%A3o+Centro+Automotivo+-+Oficina+Mec%C3%A2nica+Papicu/@-3.7393099,-38.4867471,827m/data=!3m1!1e3!4m8!3m7!1s0x7c74f3ace4fb86d:0xfac3385daf883887!8m2!3d-3.7393153!4d-38.4841722!9m1!1b1!16s%2Fg%2F11cmr52vtj?entry=ttu';
 
+const BASE = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+
 export const TESTIMONIALS: TestimonialItem[] = [
   {
     id: 'ivan-tesche',
@@ -138,7 +142,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     badge: 'Proprietário Jeep Compass',
     badgeType: 'jeep',
     text: 'Levei meu Jeep Compass com problemas na suspensão e fui atendido rapidamente. A equipe é atenciosa, identificaram o problema e explicaram tudo sem enrolação. O serviço foi rápido e o preço justo. O carro agora está ótimo.',
-    imageSrc: '/images/feedbacks/02.png',
+    imageSrc: `${BASE}images/feedbacks/02.png`,
     source: 'Google Maps'
   },
   {
@@ -150,7 +154,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     badge: 'Com Fotos do Serviço Realizado',
     badgeType: 'guide',
     text: 'Excelente experiência com o conserto do meu carro!!! Eles explicam todo o processo e enviam foto de tudo! Achei o preço super justo pelos procedimentos que foram feitos. Gratidão! 🙏',
-    imageSrc: '/images/feedbacks/01.png',
+    imageSrc: `${BASE}images/feedbacks/01.png`,
     source: 'Google Maps'
   },
   {
@@ -162,7 +166,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     badge: 'Atendimento & Confiança',
     badgeType: 'trust',
     text: 'Fernanda foi muito atenciosa desde o primeiro contato, e o mecânico André foi excepcional, me mostrando tudo que eu precisava fazer no carro e me explicando detalhes. Isso me deixou muito segura! Voltarei sempre!',
-    imageSrc: '/images/feedbacks/03.png',
+    imageSrc: `${BASE}images/feedbacks/03.png`,
     source: 'Google Maps'
   }
 ];
